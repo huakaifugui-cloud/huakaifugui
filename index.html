@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花开富贵 | 个人博客</title>
+    <style>
+        :root {
+            --primary: #c53d13;  /* 主色：朱砂红 */
+            --secondary: #f4d03f;  /* 辅助色：鎏金 */
+            --accent: #27ae60;  /* 点缀色：翡翠绿 */
+            --text: #2c3e50;  /* 正文颜色 */
+        }
+
+        body {
+            font-family: '思源宋体', 'Noto Serif SC', serif;
+            line-height: 1.8;
+            color: var(--text);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            border-bottom: 3px solid var(--primary);
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid var(--secondary);
+            margin: 0 auto 1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .nav a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+
+        .article-date {
+            color: var(--accent);
+            font-size: 0.9em;
+            margin-bottom: 1rem;
+        }
+
+        .article-title {
+            color: var(--primary);
+            font-size: 1.8em;
+            margin: 1rem 0;
+        }
+
+        .article-excerpt {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .read-more {
+            display: inline-block;
+            padding: 8px 16px;
+            background: var(--primary);
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .read-more:hover {
+            background: #a83511;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--primary);
+            color: white;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 0 15px;
+            }
+            
+            .nav {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="icon.png" 
+             alt="花开富贵头像" 
+             class="avatar">
+        <h1>花开富贵</h1>
+        <p>记录生活美学与传统文化</p>
+    </header>
+
+    <nav class="nav">
+        <a href="#articles">最新文章</a>
+        <a href="#about">QQ:3805644213</a>
+        <a href="#contact">邮箱:3805644213@qq.com</a>
+    </nav>
+
+    <main>
+        <article class="article-card">
+            <div class="article-date">2024年3月15日</div>
+            <h2 class="article-title">春日牡丹栽培指南</h2>
+            <p class="article-excerpt">详细介绍北方地区牡丹种植的土壤选择、浇水施肥技巧，以及常见病虫害防治方法...</p>
+            <a href="#readmore" class="read-more">阅读全文 →</a>
+        </article>
+
+        <article class="article-card">
+            <div class="article-date">2024年3月10日</div>
+            <h2 class="article-title">传统花艺与现代设计结合</h2>
+            <p class="article-excerpt">探索东方插花艺术在现代空间中的创新应用，分享最新花艺作品赏析...</p>
+            <a href="#readmore" class="read-more">阅读全文 →</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2025 花开富贵 保留所有权利</p>
+        <p>传承东方美学，记录生活美好</p>
+    </footer>
+</body>
+</html>
